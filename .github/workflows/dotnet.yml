@@ -32,3 +32,8 @@ jobs:
 
     - name: NuGet Push
       run: dotnet nuget push ".\src\ClassLibrary1\bin\Release\*.nupkg" --source "https://nuget.pkg.github.com/poyrazym/index.json" --skip-duplicate --api-key ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Print folder contents
+      if: ${{ failure() }}
+      run: |
+        ls -R .\src
