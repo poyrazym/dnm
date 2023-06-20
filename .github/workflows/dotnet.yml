@@ -28,7 +28,7 @@ jobs:
       run: dotnet build ./src/ClassLibrary1/ClassLibrary1.csproj --configuration Release --no-restore
 
     - name: Pack
-      run: dotnet pack ./src/ClassLibrary1/ClassLibrary1.csproj --configuration Release --no-build --output ./src/ClassLibrary1/ClassLibrary1/bin/Release
+      run: dotnet pack ./src/ClassLibrary1/ClassLibrary1.csproj --configuration Release --no-build --output ./src/ClassLibrary1/bin/Release
 
     - name: NuGet Push
-      run: dotnet nuget push ".\src\ClassLibrary1\ClassLibrary1\bin\Release\*.nupkg" --source "https://nuget.pkg.github.com/poyrazym/index.json" --skip-duplicate --api-key ${{ secrets.GITHUB_TOKEN }}
+      run: dotnet nuget push ".\src\ClassLibrary1\bin\Release\*.nupkg" --source "https://nuget.pkg.github.com/poyrazym/index.json" --skip-duplicate --api-key ${{ secrets.GITHUB_TOKEN }}
