@@ -1,9 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
+	<PropertyGroup>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Company>POYRAZYM</Company>
+		<PackageId>ClassLibrary1</PackageId>
+		<Version>1.0.1</Version>
+		<Authors>Yasin Mert POYRAZ</Authors>
+		<Descriptions>Deneme</Descriptions>
+		<RepositoryUrl>https://github.com/poyrazym</RepositoryUrl>
+	</PropertyGroup>
 </Project>
